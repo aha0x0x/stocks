@@ -11,6 +11,9 @@ import java.util.function.BiFunction;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+/**
+ * Symbol Table Persistence
+ */
 public class SymbolTable {
 
     private static final String SYMBOL_TABLE = "symbol";

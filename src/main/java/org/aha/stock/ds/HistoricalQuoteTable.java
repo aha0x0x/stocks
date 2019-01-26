@@ -1,7 +1,6 @@
 package org.aha.stock.ds;
 
 import com.google.common.base.Joiner;
-import org.aha.stock.*;
 import org.postgresql.ds.common.BaseDataSource;
 
 import java.sql.Connection;
@@ -14,6 +13,9 @@ import java.util.List;
 import java.util.function.BiFunction;
 import java.util.stream.Collectors;
 
+/**
+ * Historical_Quote persistence
+ */
 public class HistoricalQuoteTable {
 
     public static String HIST_QUOTE = "historical_quote";

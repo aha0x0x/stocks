@@ -2,6 +2,9 @@ package org.aha.stock.ds;
 
 import java.util.Objects;
 
+/**
+ * Class representing a Stock Symbol
+ */
 public class Symbol {
 
     private final String symbol;

@@ -1,6 +1,7 @@
 package org.aha.stock;
 
 import org.aha.stock.ds.DbResult;
+import org.aha.stock.ds.HistoricalQuote;
 import org.aha.stock.ds.HistoricalQuoteTable;
 import org.aha.stock.ds.SymbolTable;
 import org.aha.stock.util.ConfigUtils;
@@ -12,6 +13,9 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.Properties;
 
+/**
+ * A utility to populate stocks from data files to db
+ */
 public class StockPopulator {
     public static void main(String[] args) throws IOException {
 
@@ -20,7 +24,6 @@ public class StockPopulator {
             System.out.println("Error:" + result.getError());
             return;
         }
-
 
         final Properties appProps = ConfigUtils.loadAppProperties();
         final String csvFolder = appProps.getProperty("stocks.populator.folder");
@@ -37,7 +40,5 @@ public class StockPopulator {
                 System.out.println("Error: failed to load" + sym + " " + result.getError());
             }
         }
-
-
     }
 }

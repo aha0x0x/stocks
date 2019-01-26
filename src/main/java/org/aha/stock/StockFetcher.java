@@ -19,6 +19,9 @@ import java.util.List;
 
 import static java.lang.Thread.sleep;
 
+/**
+ * A utility to retrieve stock data and store in data files.
+ */
 public class StockFetcher {
 
     public static void main(String[] args) throws IOException {
@@ -65,5 +68,4 @@ public class StockFetcher {
         System.out.println("failed to load symbols " + dbResult.getError().getMessage());
         return new ArrayList<>();
     }
-
 }

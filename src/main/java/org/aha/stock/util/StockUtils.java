@@ -1,6 +1,6 @@
 package org.aha.stock.util;
 
-import org.aha.stock.*;
+import org.aha.stock.ds.HistoricalQuote;
 import org.aha.stock.ds.Symbol;
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;

@@ -1,8 +1,11 @@
-package org.aha.stock;
+package org.aha.stock.ds;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+/**
+ * Historical Quote
+ */
 public class HistoricalQuote {
 
     //date,open,high,low,close,volume,unadjustedVolume,change,changePercent,vwap,label,changeOverTime
